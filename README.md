@@ -7,7 +7,7 @@ No installation necessary, checkout the project and run the source.
 
 1. Check out project
 
-2. edit file to update project directory
+2. edit the file ./src/covidapp/app.R to update project directory
 
 ```{r}
 working_dir <- "~/data_vis/assignments/git-viz-repo/Project_824"
