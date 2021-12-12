@@ -14,9 +14,9 @@ library(scales)
 library(readxl)
 library(shinythemes)
 
-working_dir <- "~/data_vis/assignments/covid"
+working_dir <- "~/data_vis/assignments/git-viz-repo/Project_824"
 
-use_local <- FALSE
+use_local <- TRUE
 
 ### Death by cause per week
 if (!use_local) {
@@ -28,14 +28,14 @@ if (!use_local) {
     "https://data.cdc.gov/api/views/muzy-jte6/rows.csv?accessType=DOWNLOAD"
 } else {
   vaccine_status_url <-
-    "COVID-19_Vaccinations_in_the_United_States_Jurisdiction.csv"
+    "./data/COVID-19_Vaccinations_in_the_United_States_Jurisdiction.csv"
   death_by_cause_url <-
-    "Weekly_Provisional_Counts_of_Deaths_by_State_and_Select_Causes__2020-2021.csv"
+    "./data/Weekly_Provisional_Counts_of_Deaths_by_State_and_Select_Causes__2020-2021.csv"
   death_by_cause_hist_url <-
-    "Weekly_Counts_of_Deaths_by_State_and_Select_Causes__2014-2019.csv"
+    "./data/Weekly_Counts_of_Deaths_by_State_and_Select_Causes__2014-2019.csv"
 }
 # https://www.census.gov/data/tables/time-series/dec/popchange-data-text.html
-pop_url <- "pop-decennial.xls"
+pop_url <- "./data/pop-decennial.xls"
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
