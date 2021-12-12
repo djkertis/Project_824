@@ -18,7 +18,16 @@ working_dir <- "~/data_vis/assignments/git-viz-repo/Project_824"
 use_local <- TRUE
 ```
 
-4. Run the application.  This can be done by opening the src file ./src/covidapp/app.R in shiny and pressing the "Run App" button
+4. Run the application.  This can be done by opening the src file ./src/covidapp/app.R in shiny and pressing the "Run App" button.  Make sure the following libraries are installed.
+
+```{r}
+library(shiny)
+library(tidyverse)
+library(lubridate)
+library(scales)
+library(readxl)
+library(shinythemes)
+```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
